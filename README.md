@@ -1,11 +1,11 @@
 # overb0ard
 
-**iOS and macOS share a program: jetsam.** The tl;dr is that jetsam monitors memory usage, asks for memory when there isn't much free, and kills other programs that don't give back as much as was requested. This tool--a continuation from conradev's jetsamctl--serves to override the strict limits that jetsam sets on iOS devices with a simple command. All you need is a device with iOS 6 or later.
+**iOS and macOS share a program: jetsam.** The tl;dr is that jetsam monitors memory usage, asks for memory when there isn't much free, and kills other programs that don't give back as much as was requested. This tool--a continuation from conradev's jetsamctl--serves to override the strict limits that jetsam sets on iOS devices with a simple command. All you need is a device with iOS 6 or later（not tested）.
 
 ### Installation
 
-The latest Debian package can be downloaded from my [Cydia Repository](https://doregon.github.io/cydia) in the System section.
-
+The latest Debian package can be downloaded from original [Cydia Repository](https://doregon.github.io/cydia) in the System section.
+*this repo is down.
 ### Usage
 
 Type `jetsamctl` in a terminal to learn more about how to use. Here's some examples of what you can do:
@@ -15,7 +15,7 @@ Limit the Phone app to 48 MB of memory:
 jetsamctl -l 48 MobilePhone
 ```
 
-Set the priority of the Photos app to that of an iOS keyboard extension: 
+Set the priority of the Photos app: 
 ```
 jetsamctl -p 8 MobileSlideShow
 ```
